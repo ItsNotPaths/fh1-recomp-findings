@@ -1,6 +1,6 @@
 # rexglue fixes that got Forza Horizon 1 playable
 
-This is the running log of fixes landed in our `rexglue` fork (the `ItsNotPaths/rexglue-sdk` `fh1` branch) that took the FH1 static recompile from "boots but silently dies" to a controllable in-game state. Each entry names the file/function, the symptom that surfaced it, the mechanism, and whether the fix is upstreamable.
+This is the running log of fixes landed that took the FH1 static recompile from "boots but silently dies" to a controllable in-game state. Each entry names the file/function, the symptom that surfaced it, the mechanism, and whether the fix is upstreamable.
 
 Ordering is roughly the order they landed.
 
