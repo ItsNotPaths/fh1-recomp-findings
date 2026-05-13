@@ -23,7 +23,7 @@ objdump -d fh1-recompiled-release/fh1-host | grep -cE 'vfmadd|vfnmadd'
 
 **Status:** correctness improvement. Did **not** fix FH1's geometry jitter (that was `vaddsws` — see below). Kept anyway.
 
-**Upstreamable:** yes.
+**Upstreamable:** yes, issue never submitted
 
 ---
 
@@ -45,7 +45,7 @@ The blend in step 3 must look at **one bit per 32-bit lane**. Xenia uses `vblend
 
 **Status:** RESOLVED 2026-05-10. User-confirmed cinematic camera snap gone.
 
-**Upstreamable:** yes. Issue draft was at `docs/rexglue-prs/0003-vaddsws-per-byte-blend.txt` (path may have rotated).
+**Upstreamable:** yes. github issue rejected, fix never implimented
 
 ---
 
@@ -66,7 +66,7 @@ After fix, `*this[40] = 0x3C00` (FP16 1.0 unity) and audio is audible. Confirmed
 
 **Status:** RESOLVED 2026-05-12.
 
-**Upstreamable:** yes. Original patch (xenia-canary doesn't have an equivalent because its codegen is SSA HIR-based and doesn't alias dst/src).
+**Upstreamable:** yes. github issue rejected, fix never implimented
 
 ## 4. SPIR-V translator: HDR sample exp_bias read from word_4 instead of word_3
 
@@ -82,7 +82,7 @@ The DXBC translator (`dxbc_translator_fetch.cpp`) didn't have the bug — only t
 
 **Status:** RESOLVED 2026-05-08. User reported "ALL LIGHTING IS PERFECT" immediately on rebuild.
 
-**Upstreamable:** already upstream in xenia; this is a port-forward of `32889f51b` into rexglue's translator.
+**Upstreamable:** already upstream in xenia; this is a port-forward of `32889f51b` into rexglue's translator. github issue rejected, fix never implimented
 
 **Related ports not yet applied** (probably not load-bearing for FH1 but adjacent):
 
